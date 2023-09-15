@@ -11,8 +11,18 @@ describe 'fizzbuzz' do
     expect(fizzbuzz).to be_a(String)
   end
 
-  it 'Should return 1, 2, Fizz, 4, Buzz when input is 5' do
+  it 'Should return "fizz" when we pass 3' do
+    fizzbuzz = Fizzbuzz.new(3).fizz_buzz
+    expect(fizzbuzz).to eql('fizz')
+  end
+
+  it 'Should return buzz when we pass 5' do
     fizzbuzz = Fizzbuzz.new(5).fizz_buzz
-    expect(fizzbuzz).to eql('1, 2, Fizz, 4, Buzz')
+    expect(fizzbuzz).to eql('buzz')
+  end
+
+  it 'Should return fizzbuzz whe we pass 15' do
+    fizzbuzz = Fizzbuzz.new(15).fizz_buzz
+    expect(fizzbuzz).to eql('fizzbuzz')
   end
 end

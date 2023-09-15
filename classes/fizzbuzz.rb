@@ -10,9 +10,9 @@ class Fizzbuzz
     elsif (@number % 3).zero?
       @result = 'fizz'
     elsif (@number % 5).zero?
-      result = 'buzz'
+      'buzz'
     else
-      result = "#{@number}"
+      @number.to_s
     end
   end
 end

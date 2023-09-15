@@ -19,7 +19,7 @@ class Solver
     string.each_char do |char|
       result.unshift(char)
     end
-    return result.join('')
+    result.join
   end
 end
 

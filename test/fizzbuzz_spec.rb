@@ -15,5 +15,4 @@ describe 'fizzbuzz' do
     fizzbuzz = Fizzbuzz.new(5).fizz_buzz
     expect(fizzbuzz).to eql('1, 2, Fizz, 4, Buzz')
   end
-
 end

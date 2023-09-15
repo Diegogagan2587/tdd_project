@@ -5,18 +5,15 @@ class Fizzbuzz
   end
 
   def fizz_buzz
-    (1..@number).each do |number|
-      @result << if (number % 3).zero? && (number % 5).zero?
-                   'FizzBuzz'
-                 elsif (number % 3).zero?
-                   'Fizz'
-                 elsif (number % 5).zero?
-                   'Buzz'
-                 else
-                   number
-                 end
+    if (@number % 3).zero? && (@number % 5).zero?
+      @result = 'fizzbuzz'
+    elsif (@number % 3).zero?
+      @result = 'fizz'
+    elsif (@number % 5).zero?
+      result = 'buzz'
+    else
+      result = "#{@number}"
     end
-    @result.join(', ')
   end
 end
 

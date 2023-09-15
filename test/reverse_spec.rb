@@ -8,8 +8,8 @@ describe 'reverse' do
   end
 
   it 'Should return "hi there" if we pass "ereht ih" ' do
-    solver = solver.new
+    solver = Solver.new
     input = 'ereht ih'
-    expect(solver.reverse(input).to(eql('hi there')))
+    expect(solver.reverse(input)).to eql('hi there')
   end
 end
